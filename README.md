@@ -65,6 +65,9 @@ Once you open the config.json, you will see following json:
     "provisions": [
         "install-nginx",
         "install-php7",
+        /**
+         * mysql -h 172.16.6.6 -uadmin -padmin to access the mysql in the guest machine
+         */
         "install-mysql",
         "install-redis"
     ],
