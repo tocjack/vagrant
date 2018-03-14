@@ -1,5 +1,5 @@
 # Lightweight Vagrant Script
-This Simple script is use to bootstrap vagrant which is a tool for building and managing virtual machine environments in a single workflow. About the vagrant, please read the more details at [vagrant intro](https://www.vagrantup.com/intro/index.html).
+This simple script is use to boot vagrant which is a tool for building and managing virtual machine environments in a single workflow. About the vagrant, please read the more details at [vagrant intro](https://www.vagrantup.com/intro/index.html).
 
 ## Installation
 
