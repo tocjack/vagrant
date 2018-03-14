@@ -28,12 +28,20 @@
             }
         }
     ],
+    /**
+     * Set the virutal host and root directory for the site
+     */
     "sites": [
         {
             "map": "cjvagrant.me",
             "to": "/var/www/public"
         }
     ],
+    /**
+     * Install the nginx, php7, mysql, redis in the guest machine.
+     * If you want to install other dependencies, please put a bash script in the provision fold. 
+     * Then add the script file name in the provisions list.
+     */
     "provisions": [
         "install-nginx",
         "install-php7",
