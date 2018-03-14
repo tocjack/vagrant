@@ -71,3 +71,22 @@ Once you open the config.json, you will see following json:
 }
 ```
 
+- *There is a init.sh in the vagrant fold to write some init script.*
+- There is a booted.sh in the vagrant fold to write some terminate script.
+
+Vagrant forwarded ports allow you to access a port on your host machine and have all data forwarded to a port on the guest machine, over either TCP or UDP.  Just add the ports in the config.json as follow:
+
+```
+ports: [
+  {
+  	"send": 8080,
+  	"to": 80
+  },
+  {
+  	"send": 3360,
+  	"to": 3306
+  }
+]
+```
+
+That's it.

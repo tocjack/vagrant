@@ -9,6 +9,11 @@
     "keys": [
         "~/.ssh/id_rsa"
     ],
+    /**
+     * public fold within your project root path on the host machine
+     * will map to /var/www/public within the guest machine.
+     * Use options to specify the owner, group and write permission of the shared fold in guest machine.
+     */
     "folders": [
         {
             "map": "./public",
