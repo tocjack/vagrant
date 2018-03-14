@@ -1,0 +1,38 @@
+{
+    "ip": "172.16.6.6",
+    "memory": 2048,
+    "cpus": 2,
+    "box": "ubuntu/xenial64",
+    "name": "cjvagrant",
+    "provider": "virtualbox",
+    "authorize": "~/.ssh/id_rsa.pub",
+    "keys": [
+        "~/.ssh/id_rsa"
+    ],
+    "folders": [
+        {
+            "map": "./public",
+            "to": "/var/www/public",
+            "options": {
+                 "owner": "ubuntu",
+                 "group": "www-data",
+                 "mount_options": [
+                     "dmode=775",
+                     "fmode=774"
+                 ]
+            }
+        }
+    ],
+    "sites": [
+        {
+            "map": "cjvagrant.me",
+            "to": "/var/www/public"
+        }
+    ],
+    "provisions": [
+        "install-nginx",
+        "install-php7",
+        "install-mysql",
+        "install-redis"
+    ]
+}
