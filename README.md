@@ -67,26 +67,37 @@ Once you open the config.json, you will see following json:
         "install-php7",
         "install-mysql",
         "install-redis"
+    ],
+    /**
+     * Vagrant forwarded ports allow you to access a port on your host machine 
+     * and have all data forwarded to a port on the guest machine, over either TCP or UDP.  
+     */
+    ports: [
+        {
+            "send": 8080,
+            "to": 80
+        },
+        {
+            "send": 3360,
+            "to": 3306
+        }
     ]
 }
 ```
 
-- *There is a init.sh in the vagrant fold to write some init script.*
+- There is a init.sh in the vagrant fold to write some init script.
 - There is a booted.sh in the vagrant fold to write some terminate script.
 
-Vagrant forwarded ports allow you to access a port on your host machine and have all data forwarded to a port on the guest machine, over either TCP or UDP.  Just add the ports in the config.json as follow:
+## Available Provision
 
-```
-ports: [
-  {
-  	"send": 8080,
-  	"to": 80
-  },
-  {
-  	"send": 3360,
-  	"to": 3306
-  }
-]
-```
+- Install mysql
+- Install nginx
+- Install php7
+- Install redis
+- Create nginx virtual host
+
+I will add more provisions into it. 
+
+If you prefer to contribute something. Please make a pull request.
 
 That's it.
