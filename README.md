@@ -6,7 +6,6 @@ This simple script is use to boot vagrant which is a tool for building and manag
 ```
 git clone https://github.com/tocjack/vagrant.git
 cp -R vagrant root_path_your_project
-mv root_path_your_project/vagrant/Vagrantfile root_path_your_project
 ```
 
 ## Configuration
@@ -101,6 +100,13 @@ Once you open the config.json, you will see following json:
 - Create nginx virtual host
 
 I will add more provisions into it. 
+
+## Boot the guest machine
+
+```
+cd root_path_your_project
+vagrant up
+```
 
 If you prefer to contribute something. Please make a pull request.
 
