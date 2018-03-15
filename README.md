@@ -6,6 +6,7 @@ This simple script is use to boot vagrant which is a tool for building and manag
 ```
 git clone https://github.com/tocjack/vagrant.git
 cp -R vagrant root_path_your_project
+mv root_path_your_project/vagrant/Vagrantfile root_path_your_project
 ```
 
 ## Configuration
